@@ -1,13 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";  // For older React versions
-import App from "./App";  // Ensure this path is correct
-import "./index.css";  // Ensure this file exists
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-console.log("Index.js is loading!");  // Add this before the render call
+console.log("Index.js is loading!");
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,  // Note the comma here!
-  document.getElementById("root")
+  </React.StrictMode>
 );
