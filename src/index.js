@@ -1,11 +1,9 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./index.css";
+import "./index.css"; // Ensure CSS is correctly imported
 
-console.log("Index.js is loading!");
-
-const root = createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
